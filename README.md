@@ -1,5 +1,6 @@
 # midtermJAVA-52100086
 **I. Brief explanation**
+<br />
 In this Spring Boot app, several software development principles, patterns, and practices are being applied, including:
 
 1/ Model-View-Controller (MVC) architecture: The app follows the MVC design pattern, separating the application into three components - Model, View, and Controller. This separation of concerns helps in maintaining the codebase and makes it easier to modify or scale the application in the future.
@@ -11,6 +12,7 @@ In this Spring Boot app, several software development principles, patterns, and 
 4/ Repository pattern: The app uses a repository layer to abstract the data access logic from the service layer, allowing for separation of concerns and easier unit testing.
 
 **II. Code Structure**
+<br />
 The code structure of this Spring Boot application follows the standard MVC (Model-View-Controller) architecture pattern.
 - The model package contains the entity classes representing the domain model of the application.
 - The repository package contains the interfaces for interacting with the database.
