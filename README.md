@@ -23,7 +23,7 @@ The code structure of this Spring Boot application follows the standard MVC (Mod
 <img width="250" alt="image" src="https://user-images.githubusercontent.com/122030902/229352127-94eacf9d-76a3-4e12-9408-34848742d548.png">
 
 **III. Step to run on a local machine**
-***Step 1: Set up database (In my case, I use MySQL and XAMPP) ***
+**Step 1: Set up database (In my case, I use MySQL and XAMPP) **
 <br />
 <img width="174" alt="image" src="https://user-images.githubusercontent.com/122030902/229353082-bab813c6-8aa9-4074-8c91-080d5d796cb5.png">
 <br />
@@ -36,7 +36,7 @@ Relational Schema:
 ![image](https://user-images.githubusercontent.com/122030902/229363181-881a0fa0-abb0-400c-b3de-d69a35c00ae2.png)
 
 <br />
-***Step 2: Clone the project from my github and run the Spring boot app (the database need to have some of the product included)***
+**Step 2: Clone the project from my github and run the Spring boot app (the database need to have some of the product included)**
 <br />
 **Demo App**
 
