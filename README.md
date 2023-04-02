@@ -14,10 +14,10 @@ In this Spring Boot app, several software development principles, patterns, and 
 **II. Code Structure**
 <br />
 The code structure of this Spring Boot application follows the standard MVC (Model-View-Controller) architecture pattern.
-- The model package contains the entity classes representing the domain model of the application.
-- The repository package contains the interfaces for interacting with the database.
-- The service package contains the business logic and interacts with the repository layer.
-- The controller package contains the classes responsible for handling user requests and responses, and rendering the appropriate views.
+- The 'model' package contains the entity classes representing the domain model of the application.
+- The 'repository' package contains the interfaces for interacting with the database.
+- The 'service' package contains the business logic and interacts with the repository layer.
+- The 'controller' package contains the classes responsible for handling user requests and responses, and rendering the appropriate views.
 - Additionally, the application uses Hibernate as the ORM (Object-Relational Mapping) framework for database interactions.
 
 <img width="250" alt="image" src="https://user-images.githubusercontent.com/122030902/229352127-94eacf9d-76a3-4e12-9408-34848742d548.png">
