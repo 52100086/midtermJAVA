@@ -40,4 +40,8 @@ Relational Schema:
 
 
 
+https://user-images.githubusercontent.com/122030902/229354207-3674d218-cbf8-4994-b356-3e49f9fa2de9.mp4
+
+
+
 
