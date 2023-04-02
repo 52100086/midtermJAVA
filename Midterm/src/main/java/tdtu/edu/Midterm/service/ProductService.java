@@ -45,20 +45,28 @@ public class ProductService {
     }
 
 
-    public List<Product> getProductsByCategory(String category) {
+    public List<Product> getProductsByNameAndCategory(String name, String category) {
         List<Product> productList = this.getAllProducts();
-        if (category.equals("All")) {
-            return productList;
+        if (category != null && !category.isEmpty() && !category.equalsIgnoreCase("All")) {
+            productList = productList.stream()
+                    .filter(p -> p.getCategory().equalsIgnoreCase(category))
+                    .collect(Collectors.toList());
+        }
+        if (name != null && !name.isEmpty()) {
+            productList = productList.stream()
+                    .filter(p -> p.getName().toLowerCase().contains(name.toLowerCase()))
+                    .collect(Collectors.toList());
         }
 
-        List<Product> productsByCategory = new ArrayList<>();
-        for (Product product : productList) {
-            if (product.getCategory().equals(category)) {
-                productsByCategory.add(product);
-            }
-        }
-        return productsByCategory;
+        return productList;
     }
+
+
+
+
+
+
+
 
 
 }

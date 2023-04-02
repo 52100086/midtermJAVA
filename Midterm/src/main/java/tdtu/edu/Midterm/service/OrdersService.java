@@ -6,7 +6,6 @@ import tdtu.edu.Midterm.model.Orders;
 import tdtu.edu.Midterm.repository.OrdersRepository;
 import java.util.List;
 import java.util.Optional;
-
 @Service
 public class OrdersService {
     @Autowired
@@ -28,8 +27,6 @@ public class OrdersService {
         Optional<Orders> existingOrder = orderRepo.findById(id);
         if (existingOrder.isPresent()) {
             Orders updatedOrder = existingOrder.get();
-            updatedOrder.setCustomer(order.getCustomer());
-            updatedOrder.setOrderDate(order.getOrderDate());
             updatedOrder.setDelivery_address(order.getDelivery_address());
             updatedOrder.setOrder_status(order.getOrder_status());
             return orderRepo.save(updatedOrder);
@@ -40,4 +37,6 @@ public class OrdersService {
     public void deleteOrder(int id) {
         orderRepo.deleteById(id);
     }
+
+
 }

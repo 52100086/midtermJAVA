@@ -1,20 +1,22 @@
 package tdtu.edu.Midterm.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
+
 @Entity @Getter @Setter @NoArgsConstructor @AllArgsConstructor
-public class Order_Item {
+public class Cart {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @ManyToOne
-    @JoinColumn(name = "order_id", referencedColumnName = "id")
-    private Orders order;
-    @ManyToOne
-    @JoinColumn(name = "product_id", referencedColumnName = "id")
-    private Product product;
+    @Column(name = "product_id")
+    private int productId;
+
     private int quantity;
+
 }
