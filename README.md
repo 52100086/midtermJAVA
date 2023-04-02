@@ -32,9 +32,10 @@ ERD
 Relational Schema:
 <br />
 <img width="420" alt="image" src="https://user-images.githubusercontent.com/122030902/229353170-62a8fccc-a858-4bb9-9720-54735196d4c8.png">
+<br />
 ***Step 2: Clone the project from my github and run the Spring boot app (the database need to have some of the product included)***
 <br />
-
+**Demo App**
 
 
 
